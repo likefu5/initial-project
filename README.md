@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# React Project for Millifx
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Most of Create React App function still in there as I am not very familiar with React framework yet.
 
-## Available Scripts
+## Libraries
 
-In the project directory, you can run:
+Following are the libraries that need to add
 
-### `npm start`
+### Axios
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This library has been used with React Hooks to get information from AlphaVantage
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+If you do not have this library, please refer to following link for setup.
+https://www.npmjs.com/package/axios
 
-### `npm test`
+### Moment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This library has been used for time formating.
 
-### `npm run build`
+If you do not have this library, please refer to following link for setup.
+https://momentjs.com/docs/#/use-it/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### formattedPrice
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I have write this function by myself and saved in App.helper.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Inspiration
+Thanks for CodeSandbox (https://codesandbox.io/) The coding part doesn't take much time, the project is easy than what I thought before. However, setup the environment and deploy the project cost me more than 3 hours as I am using a windows computer that never setup anything. I probabably will use my Mac for future coding as it is relatively eazy to do these.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Other than that, just would like to mention I don't like the API for free AlphaVantage. They shouldn't put any space (" ") in API (example: "5. Exchange Rate": "305880.15716400") and that 5 times/mins caps give me lots of trouble while I test is in Windows (I didn't notice the message from console.log and thought my code is wrong somewhere). 
